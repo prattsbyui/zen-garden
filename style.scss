@@ -8,16 +8,43 @@ $secondary-font: 'Monoton', cursive;
 
 $desktop-size: 600px;
 
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #8d3e14; 
+$color-2: #bb9430; 
+$color-3: #86001e; 
+$color-4: #58667a; 
+$color-5: rgb(58, 22, 22); 
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3; // red
+
+body{
+    
+     background: linear-gradient(5deg, $color-5 10%, black 104%);
+    
+}
 h1, h2, h3 {
      font-family: $secondary-font;
      font-weight: normal;
+     font-size: xx-large;
+     color: $color-2;
 }
 
  p { 
      font-family: $primary-font;
+     color: black;
+     background-color: #58667a opacity 50%;
+     
 }
 li {
      list-style-type: none;
+   color: $color-1;  
+}
+a{
+     color: $color-2;
 }
 footer{
      text-align: center;
@@ -36,7 +63,10 @@ body {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 50px;
           align-items: center;
-        
+        background-color: black;
+        border-radius: 2%;
+        border: #bb9430 double;
+        padding: 2%;
      }
 .intro {
      display: grid;
@@ -45,28 +75,52 @@ body {
      height: auto;
      grid-column: 1/5;
      grid-row: 1/2;
+ 
+    
 }
 header {
-     grid-column: 2/5;
+     grid-column: 2/4;
      grid-row: 1/2;
+     background-color: $color-5;
+     border-radius: 2%;
+     border: #bb9430 double;
+     border-bottom: none;
+     
 }
 .summary{
-     grid-column: 1/4;
+     grid-column: 2/4;
      grid-row: 2/3;
+     background-color: $color-5;
+     padding-left: 2%;
+     border-radius: 2%;
+     border: #bb9430 double;
+     border-top: none;
+     
 }
 .preamble{
      grid-column: 1/5;
      grid-row: 4/5;
+     background-color: $color-5;
+     padding: 2%;
+     border-radius: 2%;
+     border: #bb9430 double;
 }
 .main {
      grid-column: 1/4;
      grid-row: 2/5;
+     background-image: url("/images/parchment.jpg");
+     padding: 2%;
+     border-radius: 2%;
+     border: #bb9430 double;
 }
 aside {
      grid-column: 4/5; 
      grid-row: 2/3;
      text-align: right;
-   
+     background-color: $color-5;
+   padding: 2%;
+   border-radius: 2%;
+   border: #bb9430 double;
 }
 
 }
