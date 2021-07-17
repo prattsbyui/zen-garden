@@ -28,6 +28,8 @@ body{
     
 }
 
+
+
 h1, h2, h3 {
      font-family: $secondary-font;
      font-weight: normal;
@@ -104,22 +106,7 @@ header{
           animation: spin-counter linear 10s infinite;
           -webkit-animation: spin-counter linear 10s infinite;
      }
- 
-     &::after {
-          content: "";
-          background-image: url(./images/gear_silver.svg);
-          height: 50px;
-          width: 50px;
-          position: absolute;
-          zoom: 1.5;
-          top: 80px;
-          left: 10px;
-          z-index: -1;
-          background-color: transparent;
-          background-repeat: no-repeat;
-          animation: spin linear 10s infinite;
-          -webkit-animation: spin linear 10s infinite;
-     }     
+    
 }
 @keyframes MetalShine {
      from {
@@ -148,7 +135,9 @@ footer{
 body {
      margin: auto;
      max-width: 80%;
-     background-image: url("/images/parchment.jpg");
+     background-color: $color-6;
+     background-image: none;
+   
 }
 @supports (display: grid) {
 
